@@ -44,24 +44,28 @@ body {
   }
 }
 
-#about {
+/* #about {
   margin-bottom: 50px;
+} */
+
+.selfie {
+  margin-bottom: 2rem;
 }
 
 #projectTagline {
-  margin-bottom: 50px;
+  margin-bottom: 2rem;
 }
 
 #project {
-  margin-bottom: 50px;
+  margin-bottom: 2rem;
 }
 
 #skills {
-  margin-bottom: 50px;
+  margin-bottom: 2rem;
 }
 
 #contact {
-  margin-bottom: 50px;
+  margin-bottom: 1.25rem;
 }
 
 #navbarExampleTransparentExample {
@@ -79,4 +83,16 @@ body {
 .dropdown {
   background: rgba(10, 10, 10, .1);
   transition: .2s;
+}
+
+.card-image {
+  padding: 2rem;
+}
+
+.content {
+  text-align: left;
+}
+
+.blurb {
+  margin-bottom: 2rem;
 }
