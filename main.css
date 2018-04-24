@@ -1,3 +1,7 @@
+body {
+  background-image: url('assets/ignasi_pattern_s.png');
+}
+
 #header {
   margin-top: 25px;
   font-size: 21px;
@@ -62,4 +66,17 @@
 
 #navbarExampleTransparentExample {
   margin-left: 20px;
+}
+
+.tags {
+  padding-right: 10px;
+}
+
+#tag {
+  border-radius: 0px;
+}
+
+.dropdown {
+  background: rgba(10, 10, 10, .1);
+  transition: .2s;
 }
