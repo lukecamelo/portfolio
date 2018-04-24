@@ -60,6 +60,14 @@ body {
   margin-bottom: 2rem;
 }
 
+#projectDescription {
+  padding: .75rem;
+}
+
+#projectHeader {
+  box-shadow: none;
+}
+
 #skills {
   margin-bottom: 2rem;
 }
@@ -89,10 +97,18 @@ body {
   padding: 2rem;
 }
 
+.card-header {
+  box-shadow: none;
+}
+
 .content {
   text-align: left;
 }
 
 .blurb {
   margin-bottom: 2rem;
+}
+
+.card-content {
+  padding: .75rem;
 }
