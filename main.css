@@ -62,6 +62,7 @@ body {
 
 #projectDescription {
   padding: .75rem;
+  font-size: 24px;
 }
 
 #projectHeader {
@@ -99,6 +100,11 @@ body {
 
 .card-header {
   box-shadow: none;
+}
+
+.card-header-title {
+  font-size: 32px;
+  font-weight: 700;
 }
 
 .content {
