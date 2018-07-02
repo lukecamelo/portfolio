@@ -1,3 +1,18 @@
+* {
+  z-index: 2
+}
+
+#particles-js {
+  background: #578caa;
+}
+
+#particles-js canvas {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
 body {
   background-image: url('assets/ignasi_pattern_s.png');
 }
@@ -11,6 +26,7 @@ body {
   -webkit-animation: fadein 2s; /* Safari and Chrome */
   -o-animation: fadein 2s; /* Opera */
 }
+
 @keyframes fadein {
   from {
       opacity:0;
