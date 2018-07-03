@@ -76,6 +76,11 @@ body {
   }
 }
 
+.navbar a {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 /* #about {
   margin-bottom: 50px;
 } */
