@@ -3,7 +3,7 @@
 }
 
 #particles-js {
-  background: #8F95D3;
+  background: #8f95d3;
 }
 
 #particles-js canvas {
@@ -14,7 +14,7 @@
 }
 
 body {
-  background-image: url('assets/ignasi_pattern_s.png');
+  background-image: url("assets/ignasi_pattern_s.png");
 }
 
 .columns {
@@ -45,34 +45,37 @@ body {
 
 @keyframes fadein {
   from {
-      opacity:0;
+    opacity: 0;
   }
   to {
-      opacity:1;
+    opacity: 1;
   }
 }
-@-moz-keyframes fadein { /* Firefox */
+@-moz-keyframes fadein {
+  /* Firefox */
   from {
-      opacity:0;
+    opacity: 0;
   }
   to {
-      opacity:1;
+    opacity: 1;
   }
 }
-@-webkit-keyframes fadein { /* Safari and Chrome */
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
   from {
-      opacity:0;
+    opacity: 0;
   }
   to {
-      opacity:1;
+    opacity: 1;
   }
 }
-@-o-keyframes fadein { /* Opera */
+@-o-keyframes fadein {
+  /* Opera */
   from {
-      opacity:0;
+    opacity: 0;
   }
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -98,7 +101,7 @@ body {
 }
 
 #projectDescription {
-  padding: .75rem;
+  padding: 0.75rem;
   font-size: 24px;
 }
 
@@ -127,8 +130,8 @@ body {
 }
 
 .dropdown {
-  background: rgba(10, 10, 10, .1);
-  transition: .2s;
+  background: rgba(10, 10, 10, 0.1);
+  transition: 0.2s;
 }
 
 .card-image {
@@ -153,11 +156,11 @@ body {
 }
 
 .card-content {
-  padding: .75rem;
+  padding: 0.75rem;
 }
 
 .fa-linkedin {
-  color: #0077B5;
+  color: #0077b5;
 }
 
 .fa-github-square {
@@ -181,7 +184,7 @@ body {
 }
 
 .fa-css3 {
-  color: #3B5998;
+  color: #3b5998;
 }
 
 .fa-react {
