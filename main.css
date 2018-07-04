@@ -153,7 +153,11 @@ body {
 
 .blurb {
   margin-bottom: 2rem;
-  font-size: 1.45898rem;
+  font-size: 1.4rem;
+}
+
+.blurb .card {
+  padding-bottom: 47.59px;
 }
 
 .card-content {
