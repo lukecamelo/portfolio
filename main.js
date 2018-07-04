@@ -28,15 +28,11 @@ let skills = document.querySelectorAll('.tech')
 
 if (window.matchMedia("(max-width: 950px)").matches) {
 
-  skills[0].classList.remove('tech')
-  skills[1].classList.remove('tech')
-  skills[2].classList.remove('tech')
-  skills[3].classList.remove('tech')
-
-  skills[0].classList.add('techMobile')
-  skills[1].classList.add('techMobile')
-  skills[2].classList.add('techMobile')
-  skills[3].classList.add('techMobile')
+  for(let i = 0; i < skills.length; i++) {
+    skills[i].classList.remove('tech')
+    skills[i].classList.add('techMobile')
+  }
+  
 }
 
 window.sr = ScrollReveal()
