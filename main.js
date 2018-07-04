@@ -24,10 +24,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
 })
 
+let skills = document.querySelectorAll('.tech')
+
+if (window.matchMedia("(max-width: 950px)").matches) {
+
+  skills[0].classList.remove('tech')
+  skills[1].classList.remove('tech')
+  skills[2].classList.remove('tech')
+  skills[3].classList.remove('tech')
+
+  skills[0].classList.add('techMobile')
+  skills[1].classList.add('techMobile')
+  skills[2].classList.add('techMobile')
+  skills[3].classList.add('techMobile')
+}
+
 window.sr = ScrollReveal()
 sr.reveal('#project')
 sr.reveal('#contact')
 sr.reveal('.tech', 50)
+sr.reveal('.techMobile')
 
 
 particlesJS('particles-js', 
