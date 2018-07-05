@@ -23,13 +23,27 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 let skills = document.querySelectorAll(".tech")
+let header = document.querySelector(".hero")
+let navItems = document.querySelectorAll(".boop")
 
 // ensure that tech list/skills fade in the same on desktop as they do mobile
 if (window.matchMedia("(max-width: 950px)").matches) {
-  for (let i = 0; i < skills.length; i++) {
-    skills[i].classList.remove("tech")
-    skills[i].classList.add("techMobile")
-  }
+
+  skills.forEach(skill => {
+    skill.classList.remove('tech')
+    skill.classList.add('techMobile')
+  })
+
+  header.classList.remove("is-large")
+  header.classList.add("is-fullheight")
+}
+
+if (window.matchMedia("(max-width: 1100px)").matches) {
+  
+  navItems.forEach(nav => {
+    nav.classList.remove('boop')
+  })
+
 }
 
 // fade in elements on page
@@ -38,6 +52,7 @@ sr.reveal("#project")
 sr.reveal("#contact")
 sr.reveal(".tech", 50)
 sr.reveal(".techMobile")
+sr.reveal(".boop", 25)
 
 // initialize particles.js header
 particlesJS(

@@ -84,6 +84,13 @@ body {
   letter-spacing: 2px;
 }
 
+.resume {
+  text-decoration: underline;
+}
+.resume:hover {
+  color: #bcc0e9 !important;
+}
+
 /* #about {
   margin-bottom: 50px;
 } */
