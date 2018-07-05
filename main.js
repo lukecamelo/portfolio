@@ -28,40 +28,92 @@ let navItems = document.querySelectorAll('.boop')
 let arrow = document.querySelector('.down-arrow')
 let about = document.querySelector('.about-section')
 
-const query950 = window.matchMedia('(max-width: 950px)')
+const query950 = window.matchMedia('(max-width: 768px)')
+const query951 = window.matchMedia('(min-width: 951px)')
 const query1100 = window.matchMedia('(max-width: 1100px)')
 
 // ensure that tech list/skills fade in the same on desktop as they do mobile
 
-function mediaQueries(query) {
+function mediaQueries(mobile, query2, query3) {
 
+  // if window is smaller than 950px wide
+  if (mobile.matches) {
+    skills.forEach(skill => {
+      skill.classList.remove('tech')
+      skill.classList.add('techMobile')
+    })
+
+    header.classList.remove('is-large')
+    header.classList.add('is-fullheight')
+
+    arrow.classList.remove('hidden')
+
+    about.classList.remove('about-section')
+
+    // if window is bigger than 950px wide
+  } else {
+    skills.forEach(skill => {
+      skill.classList.add('tech')
+      skill.classList.remove('techMobile')
+    })
+    header.classList.remove('is-fullheight')
+    header.classList.add('is-large')
+
+    arrow.classList.add('hidden')
+    about.classList.add('about-section')
+  }
+
+  // if window is smaller than 1100px wide
+  if (query2.matches) {
+    navItems.forEach(nav => {
+      nav.classList.remove('boop')
+    })
+
+  // if window is bigger than 1100px wide
+  } else {
+    navItems.forEach(nav => {
+      nav.classList.add('boop')
+    })
+  }
+
+  // if (query3.matches) {
+  //   arrow.classList.add('hidden')
+  //   about.classList.add('about-section')
+
+  //   header.classList.remove('is-fullheight')
+  // }
 }
 
-if (window.matchMedia('(max-width: 950px)').matches) {
-  skills.forEach(skill => {
-    skill.classList.remove('tech')
-    skill.classList.add('techMobile')
-  })
+// if (window.matchMedia('(max-width: 950px)').matches) {
+//   skills.forEach(skill => {
+//     skill.classList.remove('tech')
+//     skill.classList.add('techMobile')
+//   })
 
-  header.classList.remove('is-large')
-  header.classList.add('is-fullheight')
+//   header.classList.remove('is-large')
+//   header.classList.add('is-fullheight')
 
-  arrow.classList.remove('hidden')
+//   arrow.classList.remove('hidden')
 
-  about.classList.remove('about-section')
-}
-console.log(about)
+//   about.classList.remove('about-section')
+// }
+// console.log(about)
 
-if (window.matchMedia('(min-width: 951px)').matches) {
-  arrow.classList.add('hidden')
-  about.classList.add('about-section')
-}
+// if (window.matchMedia('(min-width: 951px)').matches) {
+//   arrow.classList.add('hidden')
+//   about.classList.add('about-section')
+// }
 
-if (window.matchMedia('(max-width: 1100px)').matches) {
-  navItems.forEach(nav => {
-    nav.classList.remove('boop')
-  })
-}
+// if (window.matchMedia('(max-width: 1100px)').matches) {
+//   navItems.forEach(nav => {
+//     nav.classList.remove('boop')
+//   })
+// }
+
+mediaQueries(query950, query1100, query951)
+query950.addListener(mediaQueries)
+// query951.addListener(mediaQueries)
+query1100.addListener(mediaQueries)
 
 // fade in elements on page
 window.sr = ScrollReveal()
