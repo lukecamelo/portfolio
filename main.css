@@ -44,9 +44,15 @@ body {
 }
 
 @media screen and (max-width: 950px) {
+
   #header {
-    margin-top: 10rem;
+    margin-top: 6rem;
   }
+
+  .is-fullheight {
+    min-height: calc(100vh - 52px) !important;
+  }
+
 }
 
 .hero-body {
@@ -62,7 +68,7 @@ body {
   z-index: -1;
   background: transparent;
   background-color: #8f95d3;
-  padding-bottom: 5rem;
+  padding-bottom: 0;
   text-align: center;
 }
 
