@@ -14,7 +14,7 @@
 }
 
 body {
-  background-image: url("assets/ignasi_pattern_s.png");
+  background-image: url('assets/ignasi_pattern_s.png');
 }
 
 .columns {
@@ -44,7 +44,6 @@ body {
 }
 
 @media screen and (max-width: 950px) {
-
   #header {
     margin-top: 6rem;
   }
@@ -52,7 +51,6 @@ body {
   .is-fullheight {
     min-height: calc(100vh - 52px) !important;
   }
-
 }
 
 .hero-body {
@@ -128,6 +126,14 @@ body {
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 1280px) {
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 #projectTagline {
   margin-bottom: 2rem;
 }
@@ -189,11 +195,11 @@ body {
 
 .blurb {
   margin-bottom: 2rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .blurb .card {
-  padding-bottom: 47.59px;
+  padding-bottom: 4.59px;
 }
 
 .card-content {
