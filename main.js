@@ -28,12 +28,12 @@ let navItems = document.querySelectorAll('.boop')
 let arrow = document.querySelector('.down-arrow')
 let about = document.querySelector('.about-section')
 
-const query768 = window.matchMedia('(max-width: 768px)')
-const query1100 = window.matchMedia('(max-width: 1100px)')
+const query768 = window.matchMedia('(max-width: 768px)'),
+  query1100 = window.matchMedia('(max-width: 1100px)')
 
 // ensure that tech list/skills fade in the same on desktop as they do mobile
 
-function mediaQueries(mobile, query2) {
+const mediaQueries = (mobile, query2) => {
   // if window is smaller than 950px wide
   if (mobile.matches) {
     skills.forEach(skill => {
@@ -48,7 +48,7 @@ function mediaQueries(mobile, query2) {
 
     about.classList.remove('about-section')
 
-    // if window is bigger than 950px wide
+    // if window is bigger than 768px wide
   } else {
     skills.forEach(skill => {
       skill.classList.add('tech')
