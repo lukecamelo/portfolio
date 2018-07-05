@@ -34,13 +34,32 @@ body {
 }
 
 #header {
-  margin-top: 25px;
+  margin-top: 5rem;
   font-size: 21px;
   text-align: center;
   animation: fadein 2s;
   -moz-animation: fadein 2s; /* Firefox */
   -webkit-animation: fadein 2s; /* Safari and Chrome */
   -o-animation: fadein 2s; /* Opera */
+}
+
+@media screen and (max-width: 950px) {
+  #header {
+    margin-top: 5rem;
+  }
+}
+
+.hero-body {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.down-arrow {
+  z-index: -1;
+  background: transparent;
+  background-color: #8f95d3;
+  padding-bottom: 5rem;
+  text-align: center;
 }
 
 @keyframes fadein {
