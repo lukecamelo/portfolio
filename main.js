@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
 let skills = document.querySelectorAll(".tech")
 let header = document.querySelector(".hero")
 let navItems = document.querySelectorAll(".boop")
+let arrow = document.querySelector('.down-arrow')
 
 // ensure that tech list/skills fade in the same on desktop as they do mobile
 if (window.matchMedia("(max-width: 950px)").matches) {
@@ -36,6 +37,13 @@ if (window.matchMedia("(max-width: 950px)").matches) {
 
   header.classList.remove("is-large")
   header.classList.add("is-fullheight")
+
+  arrow.classList.remove('hidden')
+
+}
+
+if (window.matchMedia('(min-width: 951px)').matches) {
+  arrow.classList.add('hidden')
 }
 
 if (window.matchMedia("(max-width: 1100px)").matches) {

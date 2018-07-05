@@ -45,13 +45,17 @@ body {
 
 @media screen and (max-width: 950px) {
   #header {
-    margin-top: 5rem;
+    margin-top: 10rem;
   }
 }
 
 .hero-body {
   display: flex !important;
   flex-direction: column;
+}
+
+.hidden {
+  display: none;
 }
 
 .down-arrow {
