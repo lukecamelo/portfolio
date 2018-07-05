@@ -28,14 +28,12 @@ let navItems = document.querySelectorAll('.boop')
 let arrow = document.querySelector('.down-arrow')
 let about = document.querySelector('.about-section')
 
-const query950 = window.matchMedia('(max-width: 768px)')
-const query951 = window.matchMedia('(min-width: 951px)')
+const query768 = window.matchMedia('(max-width: 768px)')
 const query1100 = window.matchMedia('(max-width: 1100px)')
 
 // ensure that tech list/skills fade in the same on desktop as they do mobile
 
-function mediaQueries(mobile, query2, query3) {
-
+function mediaQueries(mobile, query2) {
   // if window is smaller than 950px wide
   if (mobile.matches) {
     skills.forEach(skill => {
@@ -69,50 +67,16 @@ function mediaQueries(mobile, query2, query3) {
       nav.classList.remove('boop')
     })
 
-  // if window is bigger than 1100px wide
+    // if window is bigger than 1100px wide
   } else {
     navItems.forEach(nav => {
       nav.classList.add('boop')
     })
   }
-
-  // if (query3.matches) {
-  //   arrow.classList.add('hidden')
-  //   about.classList.add('about-section')
-
-  //   header.classList.remove('is-fullheight')
-  // }
 }
 
-// if (window.matchMedia('(max-width: 950px)').matches) {
-//   skills.forEach(skill => {
-//     skill.classList.remove('tech')
-//     skill.classList.add('techMobile')
-//   })
-
-//   header.classList.remove('is-large')
-//   header.classList.add('is-fullheight')
-
-//   arrow.classList.remove('hidden')
-
-//   about.classList.remove('about-section')
-// }
-// console.log(about)
-
-// if (window.matchMedia('(min-width: 951px)').matches) {
-//   arrow.classList.add('hidden')
-//   about.classList.add('about-section')
-// }
-
-// if (window.matchMedia('(max-width: 1100px)').matches) {
-//   navItems.forEach(nav => {
-//     nav.classList.remove('boop')
-//   })
-// }
-
-mediaQueries(query950, query1100, query951)
-query950.addListener(mediaQueries)
-// query951.addListener(mediaQueries)
+mediaQueries(query768, query1100)
+query768.addListener(mediaQueries)
 query1100.addListener(mediaQueries)
 
 // fade in elements on page
@@ -167,7 +131,7 @@ particlesJS(
     interactivity: {
       detect_on: 'canvas',
       events: {
-        onhover: { enable: false, mode: 'bubble' },
+        onhover: { enable: true, mode: 'repulse' },
         onclick: { enable: true, mode: 'push' },
         resize: true
       },
