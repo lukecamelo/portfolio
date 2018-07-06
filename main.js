@@ -86,6 +86,7 @@ sr.reveal('#contact')
 sr.reveal('.tech', 50)
 sr.reveal('.techMobile')
 sr.reveal('.boop', 25)
+sr.reveal('.level-item', 25)
 
 // initialize particles.js header
 particlesJS(

@@ -212,6 +212,7 @@ body {
 
 .fa-github-square {
   color: #333;
+  pointer-events: none;
 }
 
 .fa-twitter-square {
