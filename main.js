@@ -87,7 +87,9 @@ sr.reveal('.tech', 50)
 sr.reveal('.techMobile')
 sr.reveal('.boop', 25)
 sr.reveal('.level-item', 25)
-sr.reveal('.tag', 50)
+sr.reveal('.tag', { delay: 100 }, 50)
+sr.reveal('.tag2', { delay: 100 }, 50)
+sr.reveal('.tag3', { delay: 100 }, 50)
 
 // initialize particles.js header
 particlesJS(
