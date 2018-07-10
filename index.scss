@@ -176,87 +176,88 @@ body {
   transition: 0.2s;
 }
 
-.card-image {
-  padding: 2rem;
-}
+.card {
+  .card-image {
+    padding: 2rem;
+  }
 
-.card-header {
-  box-shadow: none;
-}
+  .card-header {
+    box-shadow: none;
+  }
 
-.card-header-title {
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.content {
-  text-align: center;
+  .card-header-title {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .content {
+    text-align: center;
+  }
+  .card-content {
+    padding: 0.75rem;
+  }
 }
 
 .blurb {
   margin-bottom: 2rem;
   font-size: 1.2rem;
+
+  .card {
+    padding-bottom: 4.59px;
+  }
 }
 
-.blurb .card {
-  padding-bottom: 4.59px;
+.contact-section {
+  .fa-linkedin {
+    color: #0077b5;
+  }
+  .fa-github-square {
+    color: #333;
+  }
+  .fa-twitter-square {
+    color: #00aced;
+  }
+  .fa-envelope-square {
+    color: #c71610;
+  }
 }
 
-.card-content {
-  padding: 0.75rem;
-}
+.skill-section {
+  .fa-js-square,
+  .javascript-tag {
+    color: #f7df1e;
+  }
 
-.fa-linkedin {
-  color: #0077b5;
-}
+  .javascript-tag {
+    background-color: #f7df1e !important;
+  }
 
-.fa-github-square {
-  color: #333;
-}
+  .html-tag {
+    color: white !important;
+    background-color: #e34f26 !important;
+  }
 
-.fa-twitter-square {
-  color: #00aced;
-}
+  .css-tag {
+    color: white !important;
+    background-color: #3b5998 !important;
+  }
 
-.fa-envelope-square {
-  color: #c71610;
-}
+  .react-tag {
+    background-color: #00d8ff !important;
+    /* color: white !important; */
+  }
 
-.fa-js-square,
-.javascript-tag {
-  color: #f7df1e;
-}
+  .fa-html5,
+  .html-tag {
+    color: #e34f26;
+  }
 
-.javascript-tag {
-  background-color: #f7df1e !important;
-}
+  .fa-css3,
+  .css-tag {
+    color: #3b5998;
+  }
 
-.html-tag {
-  color: white !important;
-  background-color: #e34f26 !important;
-}
-
-.css-tag {
-  color: white !important;
-  background-color: #3b5998 !important;
-}
-
-.react-tag {
-  background-color: #00d8ff !important;
-  /* color: white !important; */
-}
-
-.fa-html5,
-.html-tag {
-  color: #e34f26;
-}
-
-.fa-css3,
-.css-tag {
-  color: #3b5998;
-}
-
-.fa-react,
-.react-tag {
-  color: #00d8ff;
+  .fa-react,
+  .react-tag {
+    color: #00d8ff;
+  }
 }
