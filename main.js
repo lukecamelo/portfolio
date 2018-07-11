@@ -27,9 +27,11 @@ let header = document.querySelector('.hero')
 let navItems = document.querySelectorAll('.boop')
 let arrow = document.querySelector('.down-arrow')
 let about = document.querySelector('.about-section')
+let projectDescription = document.querySelectorAll ('.project-description')
+let projectImage = document.querySelectorAll('.project-picture')
 
-const query768 = window.matchMedia('(max-width: 768px)'),
-  query1100 = window.matchMedia('(max-width: 1100px)')
+const query768 = window.matchMedia('(max-width: 768px)')
+const query1100 = window.matchMedia('(max-width: 1100px)')
 
 // ensure that tech list/skills fade in the same on desktop as they do mobile
 
@@ -66,6 +68,21 @@ const mediaQueries = (mobile, query2) => {
     navItems.forEach(nav => {
       nav.classList.remove('boop')
     })
+
+    console.log('below 1100px')
+    console.log(projectDescription[0])
+    // projectDescription.forEach(desc => {
+    //   desc.classList.remove('is-two-thirds')
+    //   desc.classList.add('is-one-third')
+    // })
+
+    // projectDescription[0].classList.remove('is-two-thirds')
+    // projectDescription[0].classList.add('is-one-third')
+
+    // projectImage.forEach(img => {
+    //   img.classList.remove('is-one-third')
+    //   img.classList.add('one-two-thirds')
+    // })
 
     // if window is bigger than 1100px wide
   } else {
