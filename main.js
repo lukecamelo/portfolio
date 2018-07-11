@@ -27,8 +27,7 @@ let header = document.querySelector('.hero')
 let navItems = document.querySelectorAll('.boop')
 let arrow = document.querySelector('.down-arrow')
 let about = document.querySelector('.about-section')
-let projectDescription = document.querySelectorAll ('.project-description')
-let projectImage = document.querySelectorAll('.project-picture')
+let project = document.querySelectorAll('.project')
 
 const query768 = window.matchMedia('(max-width: 768px)')
 const query1100 = window.matchMedia('(max-width: 1100px)')
@@ -36,7 +35,7 @@ const query1100 = window.matchMedia('(max-width: 1100px)')
 // ensure that tech list/skills fade in the same on desktop as they do mobile
 
 const mediaQueries = (mobile, query2) => {
-  // if window is smaller than 950px wide
+  // if window is smaller than 768px wide
   if (mobile.matches) {
     skills.forEach(skill => {
       skill.classList.remove('tech')
@@ -49,6 +48,9 @@ const mediaQueries = (mobile, query2) => {
     arrow.classList.remove('hidden')
 
     about.classList.remove('about-section')
+
+    project[0].classList.remove('project')
+    console.log(project[0])
 
     // if window is bigger than 768px wide
   } else {
