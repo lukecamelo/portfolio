@@ -49,11 +49,14 @@ const mediaQueries = (mobile, query2) => {
 
     about.classList.remove('about-section')
 
-    project[0].classList.remove('project')
+    project.forEach(proj => {
+      proj.classList.remove('project')
+    })
+
     console.log(project[0])
 
     // if window is bigger than 768px wide
-  } else {
+  } else if (!mobile.matches) {
     skills.forEach(skill => {
       skill.classList.add('tech')
       skill.classList.remove('techMobile')
@@ -63,6 +66,11 @@ const mediaQueries = (mobile, query2) => {
 
     arrow.classList.add('hidden')
     about.classList.add('about-section')
+
+    project.forEach(proj => {
+      proj.classList.add('project')
+    })
+    
   }
 
   // if window is smaller than 1100px wide

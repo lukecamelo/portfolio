@@ -33,7 +33,7 @@ figure img {
   }
 
   .project {
-    display: flex;
+    display: flex !important;
   }
 }
 
