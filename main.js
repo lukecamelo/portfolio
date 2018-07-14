@@ -67,9 +67,9 @@ const mediaQueries = (mobile, query2) => {
     arrow.classList.add('hidden')
     about.classList.add('about-section')
 
-    project.forEach(proj => {
-      proj.classList.add('project')
-    })
+    // project.forEach(proj => {
+    //   proj.classList.add('project')
+    // })
     
   }
 
