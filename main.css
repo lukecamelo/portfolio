@@ -17,6 +17,10 @@ body {
   background-image: url('assets/ignasi_pattern_s.png');
 }
 
+figure img {
+  width: 100%;
+}
+
 .columns {
   margin: 0;
 }
