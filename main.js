@@ -27,13 +27,11 @@ let header = document.querySelector('.hero')
 let navItems = document.querySelectorAll('.boop')
 let arrow = document.querySelector('.down-arrow')
 let about = document.querySelector('.about-section')
-let project = document.querySelectorAll('.project')
 
 const query768 = window.matchMedia('(max-width: 768px)')
 const query1100 = window.matchMedia('(max-width: 1100px)')
 
-// ensure that tech list/skills fade in the same on desktop as they do mobile
-
+// adding/removing classes depending on device size
 const mediaQueries = (mobile, query2) => {
   // if window is smaller than 768px wide
   if (mobile.matches) {
@@ -49,12 +47,6 @@ const mediaQueries = (mobile, query2) => {
 
     about.classList.remove('about-section')
 
-    // project.forEach(proj => {
-    //   proj.classList.remove('project')
-    // })
-
-    console.log(project[0])
-
     // if window is bigger than 768px wide
   } else if (!mobile.matches) {
     skills.forEach(skill => {
@@ -66,11 +58,6 @@ const mediaQueries = (mobile, query2) => {
 
     arrow.classList.add('hidden')
     about.classList.add('about-section')
-
-    // project.forEach(proj => {
-    //   proj.classList.add('project')
-    // })
-    
   }
 
   // if window is smaller than 1100px wide
@@ -78,23 +65,7 @@ const mediaQueries = (mobile, query2) => {
     navItems.forEach(nav => {
       nav.classList.remove('boop')
     })
-
-    console.log('below 1100px')
-    console.log(projectDescription[0])
-    // projectDescription.forEach(desc => {
-    //   desc.classList.remove('is-two-thirds')
-    //   desc.classList.add('is-one-third')
-    // })
-
-    // projectDescription[0].classList.remove('is-two-thirds')
-    // projectDescription[0].classList.add('is-one-third')
-
-    // projectImage.forEach(img => {
-    //   img.classList.remove('is-one-third')
-    //   img.classList.add('one-two-thirds')
-    // })
-
-    // if window is bigger than 1100px wide
+    // if window is larger than 1100px wide
   } else {
     navItems.forEach(nav => {
       nav.classList.add('boop')
