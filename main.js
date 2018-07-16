@@ -49,9 +49,9 @@ const mediaQueries = (mobile, query2) => {
 
     about.classList.remove('about-section')
 
-    project.forEach(proj => {
-      proj.classList.remove('project')
-    })
+    // project.forEach(proj => {
+    //   proj.classList.remove('project')
+    // })
 
     console.log(project[0])
 
