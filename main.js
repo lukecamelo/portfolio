@@ -89,6 +89,22 @@ sr.reveal('.tag', { delay: 100 }, 50)
 sr.reveal('.tag2', { delay: 100 }, 50)
 sr.reveal('.tag3', { delay: 100 }, 50)
 
+const email = 'llukecamelo@gmail.com'
+const button = document.querySelector('#email-button')
+
+const copyEmail = str => {
+  const el = document.createElement('textarea')
+  el.value = str
+  document.body.appendChild(el)
+  el.select()
+  document.execCommand('copy')
+  document.body.removeChild(el)
+  console.log('durr')
+}
+
+button.addEventListener('click', () => copyEmail(email))
+
+
 // initialize particles.js header
 particlesJS(
   'particles-js',
