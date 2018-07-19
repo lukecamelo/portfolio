@@ -2,6 +2,14 @@
   z-index: 2;
 }
 
+h1 {
+  font-family: 'Prata', serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
 #particles-js {
   background: #8f95d3;
 }
@@ -45,10 +53,15 @@ figure img {
   margin-top: 3rem;
   font-size: 21px;
   text-align: center;
+  font-family: 'Prata', serif;
   animation: fadein 2s;
   -moz-animation: fadein 2s; /* Firefox */
   -webkit-animation: fadein 2s; /* Safari and Chrome */
   -o-animation: fadein 2s; /* Opera */
+}
+
+#header h2 {
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media screen and (max-width: 950px) {
