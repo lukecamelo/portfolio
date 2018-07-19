@@ -10,6 +10,10 @@ p {
   font-family: 'Open Sans', sans-serif;
 }
 
+a {
+  font-family: 'Prata', serif;
+}
+
 #particles-js {
   background: #8f95d3;
 }
