@@ -237,6 +237,12 @@ figure img {
   padding-bottom: .75rem;
 }
 
+.links {
+  font-family: 'Open Sans', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
 #tag {
   border-radius: 0px;
 }
