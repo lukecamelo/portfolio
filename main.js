@@ -48,7 +48,7 @@ const mediaQueries = (mobile, query2) => {
     about.classList.remove('about-section')
 
     // if window is bigger than 768px wide
-  } else if (!mobile.matches) {
+  } else {
     skills.forEach(skill => {
       skill.classList.add('tech')
       skill.classList.remove('techMobile')
@@ -63,12 +63,12 @@ const mediaQueries = (mobile, query2) => {
   // if window is smaller than 1100px wide
   if (query2.matches) {
     navItems.forEach(nav => {
-      nav.classList.remove('boop')
+      nav.classList.remove('nav-animation')
     })
     // if window is larger than 1100px wide
   } else {
     navItems.forEach(nav => {
-      nav.classList.add('boop')
+      nav.classList.add('nav-animation')
     })
   }
 }
@@ -83,7 +83,7 @@ sr.reveal('#project')
 sr.reveal('#contact')
 sr.reveal('.tech', 50)
 sr.reveal('.techMobile')
-sr.reveal('.boop', 25)
+sr.reveal('.nav-animation', 25)
 sr.reveal('.level-item', 25)
 sr.reveal('.tag', { delay: 100 }, 50)
 sr.reveal('.tag2', { delay: 100 }, 50)
@@ -100,7 +100,6 @@ const copyEmail = str => {
   el.select()
   document.execCommand('copy')
   document.body.removeChild(el)
-  console.log('durr')
 }
 
 button.addEventListener('click', () => copyEmail(email))

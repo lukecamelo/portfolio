@@ -148,10 +148,6 @@ figure img {
   color: #bcc0e9 !important;
 }
 
-/* #about {
-  margin-bottom: 50px;
-} */
-
 .selfie {
   margin-bottom: 2rem;
 }
@@ -172,10 +168,10 @@ figure img {
   .project .card {
     margin-bottom: 1.5rem !important;
   }
+}
 
-  .card-image {
-    padding: 2px !important;
-  }
+.card-image {
+  padding: 2px !important;
 }
 
 #projectTagline {
@@ -224,17 +220,17 @@ figure img {
 } */
 
 .tags {
-  padding-left: .75rem !important;
-  padding-right: .75rem !important;
-  padding-top: .75rem !important;
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
+  padding-top: 0.75rem !important;
 }
 
 .links {
   display: flex;
   align-self: center;
-  padding-left: .75rem;
-  padding-right: .75rem;
-  padding-bottom: .75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .links {
