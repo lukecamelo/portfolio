@@ -148,6 +148,14 @@ figure img {
   color: #bcc0e9 !important;
 }
 
+.profile-image {
+  height: 100%;
+  width: 100%;
+}
+
+.bio {
+  font-size: 1.6rem;
+}
 .selfie {
   margin-bottom: 2rem;
 }
