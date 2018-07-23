@@ -335,6 +335,11 @@ figure img {
   color: #3b5998;
 }
 
+.sass-tag {
+  background-color: #c69 !important;
+  color: white !important;
+}
+
 .fa-react,
 .react-tag {
   color: #00d8ff;
