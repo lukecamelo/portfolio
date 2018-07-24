@@ -52,6 +52,13 @@ figure img {
   .project {
     display: flex !important;
   }
+
+}
+
+@media screen and (max-width: 768px) {
+  .bio {
+    font-size: 1rem;
+  }
 }
 
 .section {
