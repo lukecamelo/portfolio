@@ -57,7 +57,10 @@ figure img {
 
 @media screen and (max-width: 768px) {
   .bio {
-    font-size: 1rem;
+    font-size: 1rem !important;
+  }
+  p {
+    font-size: 1rem !important;
   }
 }
 
